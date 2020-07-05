@@ -2,9 +2,244 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>site final</title>
-</head>
-<body>
+    <!--  RESPONSIVE  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  RESET CSS  -->
+    <link rel="stylesheet" href="assets/reset.css">
+    <!--  FAVICON  -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <!--  OPENGRAPH  -->
+    <meta property="og:title" content="Benjamin Martinez - Portfolio">
+    <meta property="og:description" content="Click for watch my portfolio !">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.benm-art.com">
+    <meta property="og:image" content="assets/img/LogoPastel-09.png">
+    <!--  FONTAWESOME  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <!--  CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  BOOTSTRAP  -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
     
-</body>
-</html>
+    <title>Benm-Art Portfolio</title>
+</head>
+
+<body>
+
+    <!--  PAGE 1  -->
+    <nav class="navbar navbar-expand-lg menuSite" id="mainMenu">
+        <a class="navbar-brand" href="index.html">
+            <img src="../assets/img/LogoPastel-09.png" class="logoNav1" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end text-white " id="navbarNavDropdown">
+            <ul class="navbar-nav menuPlus">
+
+                <!--
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+-->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PROJECTS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="pages/reeway.html">REEWAY</a>
+                        <a class="dropdown-item" href="pages/mamajo.html">MAMA JO</a>
+                        <a class="dropdown-item" href="pages/papajo.html">PAPA JO</a>
+                        <a class="dropdown-item" href="pages/merci.html">MERCI CLODETTE</a>
+                        <a class="dropdown-item" href="pages/ubhia.html">UBHIA</a>
+                        <a class="dropdown-item" href="pages/happycure.html">HAPPY CURE</a>
+                        <a class="dropdown-item" href="pages/museum.html">WINE & TRADE</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#clients">CLIENTS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contact.html">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid imgCentWidth menuSite pb-5">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <!--  PRESENTATION  -->
+                <section class="descript2 mt-5 ml-5">
+                    <h2>BENJAMIN MARTINEZ,<span class="whiteFull"> Creative Art Director</span></h2>
+                    <p>Based in St. Louis Missouri and Bordeaux France.</p>
+                    <p>Brand designing is what I love.</p>
+                    <p>You need an Identity that stands out ?</p>
+                    <h2 class="h3yellow">LET'S WORK TOGETHER AND CREATE.</h2>
+                    <h3>I'm here for you !</h3>
+                </section>
+            </div>
+
+            
+            <div class="col-lg-4 col-sm-12 descript3">
+                <h1>ART DIRECTION</h1>
+                <h1>DESIGN GLOBAL</h1>
+                <h1>LOGOS</h1>
+                <h1>BRANDING</h1>
+                <h1>WEB DESIGN</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="portfolioSom" id="portfolioSom">
+        <h1>PROJECTS</h1>
+    </div>
+
+    <!--
+    <div class="vitrine1">
+           <img src="assets/img/banniereReeway.png" class="reeway" alt="banniere reeway">
+            <h3>REEWAY FOOTWEAR</h3>
+            <p>2020</p>
+    </div>
+-->
+
+    <div class="vitrine1">
+        <a href="pages/reeway.html" class="vitrine1">
+            <img src="assets/img/banniereReeway.png" class="reeway" alt="banniere reeway">
+            <h3>REEWAY FOOTWEAR</h3>
+            <p>2020</p>
+        </a>
+    </div>
+
+    <div class="vitrine2">
+        <a href="pages/mamajo.html" class="vitrine2">
+            <img src="assets/img/banniereMamajo.png" class="mamajo" alt="">
+            <h3>MAMA JO</h3>
+            <p>2020</p>
+        </a>
+    </div>
+
+    <div class="vitrine3">
+        <a href="pages/papajo.html" class="vitrine3">
+            <img src="assets/img/bannierePapajo.png" class="papajo" alt="">
+            <h3>PAPA JO</h3>
+            <p>2020</p>
+        </a>
+    </div>
+
+    <div class="vitrine4">
+        <a href="pages/merci.html" class="vitrine4">
+            <img src="assets/img/banniereClodette.png" class="clodette" alt="">
+            <h3>MERCI CLODETTE</h3>
+            <p>2019</p>
+        </a>
+    </div>
+
+    <div class="vitrine5">
+        <a href="pages/ubhia.html" class="vitrine5">
+            <img src="assets/img/banniereUbhia.png" class="ubhia" alt="">
+            <h3>UBHIA</h3>
+            <p>2019</p>
+        </a>
+    </div>
+
+    <div class="vitrine6">
+        <img src="assets/img/banniereHappycure.png" class="happy" alt="">
+        <h3>HAPPY CURE</h3>
+        <p>2019</p>
+    </div>
+
+    <div class="vitrine7">
+        <img src="assets/img/banniereMusee.png" class="museum" alt="">
+        <h3>WINE & TRADE MUSEUM BORDEAUX</h3>
+        <p>2018</p>
+    </div>
+
+    <section class="aPropos">
+
+        <h2>My job is to listen</h2>
+        <h2>to your needs</h2>
+        <h2>and fullfill them</h2>
+        <br>
+        <h1>french / american graphic designer</h1>
+        <br>
+        <h1>Dare to be you,</h1>
+        <h1>dare to be different.</h1>
+        <br>
+        <h1>Benjamin</h1>
+        <h2>Martinez</h2>
+
+
+    </section>
+
+    <div class="container-fluid backBlack mt-0">
+       <div class="row imgCentWidth pt-5">
+           <div class="col-12" id="clients">
+               <img src="assets/img/client_text.png" class="" alt="">
+           </div>
+       </div>
+        <section class="customer-logos slider backBlack">
+            <div class="slide"><img src="assets/img/slide1.png"></div>
+            <div class="slide"><img src="assets/img/slide2.png"></div>
+            <div class="slide"><img src="assets/img/slide3.png"></div>
+            <div class="slide"><img src="assets/img/slide5.png"></div>
+            <div class="slide"><img src="assets/img/slide6.png"></div>
+            <div class="slide"><img src="assets/img/slide7.png"></div>
+            <div class="slide"><img src="assets/img/slide8.png"></div>
+            <div class="slide"><img src="assets/img/slide9.png"></div>
+            <div class="slide"><img src="assets/img/slide10.png"></div>
+            <div class="slide"><img src="assets/img/slide11.png"></div>
+            <div class="slide"><img src="assets/img/slide12.png"></div>
+            <div class="slide"><img src="assets/img/slide13.png"></div>
+            <div class="slide"><img src="assets/img/slide14.png"></div>
+            <div class="slide"><img src="assets/img/slide15.png"></div>
+            <div class="slide"><img src="assets/img/slide16.png"></div>
+            <div class="slide"><img src="assets/img/slide17.png"></div>
+            <div class="slide"><img src="assets/img/slide18.png"></div>
+            <div class="slide"><img src="assets/img/slide19.png"></div>
+            <div class="slide"><img src="assets/img/slide20.png"></div>
+            <div class="slide"><img src="assets/img/slide21.png"></div>
+            <div class="slide"><img src="assets/img/slide22.png"></div>
+            <div class="slide"><img src="assets/img/slide23.png"></div>
+        </section>
+    </div>
+
+
+    <footer class="footer1 noDisplay">
+        
+        
+        <span><a href="https://instagram.com/bm_graphicdesigns?igshid=18c2kray4x6c5">Instagram</a></span>
+        <span><a href="https://www.facebook.com/benjamin.soccerfreak.martinez">Facebook</a></span>
+        <span><a href="https://www.behance.net/benmartinef2a9">behance</a></span>
+        <img src="assets/img/LogoPastel-09.png" alt="" class="logoFoot2">
+    </footer>
+    
+    <div class="footer2">
+        <img src="assets/img/LogoPastel-09.png" class="w-25 h-100" alt="">
+        <br>
+        <div class="flexSocial">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-behance"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body></html>

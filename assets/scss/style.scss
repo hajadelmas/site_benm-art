@@ -1,0 +1,970 @@
+// GENERALS -------------------------------------------
+
+html {
+    font-size: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: "Nexa-Light";
+    src: url("assets/fonts/Nexa-Light.otf") format('otf'),
+        url("../fonts/Nexa-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Nexa-Bold";
+    src: url("..assets/fonts/Nexa-Bold.otf") format('otf'),
+        url("../fonts/Nexa-Bold.ttf") format('truetype');
+}
+
+
+$mainFont: "Nexa-Light";
+$titleFont: "Nexa-Bold";
+$yellow : #aecea7;
+
+a {
+    color: inherit;
+}
+
+li {
+    text-decoration: none;
+}
+
+
+// PAGE 1 -------------------------------------------
+
+.head1 {
+    background-color: black;
+    height: 85vh;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar1 {
+    background-color: $yellow;
+    height: 5vh;
+    width: 70vw;
+
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        line-height: 2rem;
+
+
+        li {
+            font-family: $titleFont;
+            color: white;
+            font-size: 1rem;
+            margin-right: 4rem;
+
+            :hover {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.logoNav {
+    position: absolute;
+    top: 28px;
+    left: 49px;
+    width: 129px;
+    height: 112px;
+}
+
+.photoBen {
+    position: absolute;
+    top: 136px;
+    height: 25rem;
+}
+
+.whiteFull {
+    border: 0px solid black;
+    color: white;
+    text-shadow: 0px 0 white, 0 0px white, 0px 0 white, 0 0px white;
+}
+
+.h3yellow {
+    color: black;
+    text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
+}
+
+.portfolioSom {
+    color: white;
+    background-color: $yellow;
+    margin: 3rem 0rem;
+    padding: 1rem 1rem 0.5rem 2rem;
+    font-family: $titleFont;
+}
+
+
+.vitrine1,
+.vitrine2,
+.vitrine3,
+.vitrine4,
+.vitrine5,
+.vitrine6,
+.vitrine7 {
+    height: 25vh;
+    background-color: black;
+    margin: 3rem 0rem;
+    //    font-family: $mainFont;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s ease;
+
+    h3 {
+        color: white;
+        font-family: $titleFont;
+    }
+
+    p {
+        color: $yellow;
+        font-size: 1rem;
+        font-family: $mainFont;
+    }
+}
+
+.vitrine1:hover .reeway {
+    display: block;
+}
+
+.vitrine2:hover .mamajo {
+    display: block;
+}
+
+.vitrine3:hover .papajo {
+    display: block;
+}
+
+.vitrine4:hover .clodette {
+    display: block;
+}
+
+.vitrine5:hover .ubhia {
+    display: block;
+}
+
+.vitrine6:hover .happy {
+    display: block;
+}
+
+.vitrine7:hover .museum {
+    display: block;
+}
+
+.reeway {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.mamajo {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.papajo {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 11;
+    display: none;
+}
+
+.clodette {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 12;
+    display: none;
+}
+
+.ubhia {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 13;
+    display: none;
+}
+
+.happy {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 14;
+    display: none;
+}
+
+.museum {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 15;
+    display: none;
+}
+
+
+.aPropos {
+    background-color: black;
+    text-transform: uppercase;
+    font-family: $titleFont;
+    padding: 10px;
+
+    :nth-child(1) {
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+    :nth-child(2) {
+        color: white;
+    }
+
+    :nth-child(3) {
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+    :nth-child(5) {
+        color: white;
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+
+    :nth-child(7) {
+        color: white;
+        text-align: center;
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+    :nth-child(7) {
+        color: white;
+        text-align: center;
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        font-size: 3.5rem;
+    }
+
+    :nth-child(8) {
+        color: white;
+        text-align: center;
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        font-size: 3.5rem;
+    }
+
+    :nth-child(10) {
+        color: white;
+        text-align: center;
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+    :nth-child(11) {
+        color: white;
+        text-align: center;
+        color: white;
+    }
+
+    :nth-child(12) {
+        width: 5rem;
+    }
+}
+
+
+.footer1 {
+    height: 30vh;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    font-family: $mainFont;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 2rem;
+
+    span {
+        margin-right: 1rem;
+    }
+
+}
+
+.logoFoot2 {
+    position: absolute;
+    border-bottom: 30px;
+    left: 47%;
+    width: 5rem;
+    height: 5rem;
+    width: 5rem;
+    height: 5rem;
+
+}
+
+
+// PAGE 2 ------------------------------------------------------------------------------
+
+.head2 {
+    //    background-color: black;
+    height: 35vh;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.logoReeway {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.descRee {
+    text-align: center;
+}
+
+.imgCentWidth {
+    img {
+        width: 100%;
+    }
+}
+
+.borderFontBlack {
+    color: white;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2.5rem;
+    font-family: $titleFont;
+}
+
+.orderReeway {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 2px 0px;
+    }
+}
+
+
+.justiConCenter {
+
+    //    display: flex;
+    //    justify-content: center;
+    //    margin: 2rem 0rem;
+    img {
+        width: 100%;
+    }
+}
+
+// PAGE PAPAJO & MAMAJO ------------------------------------------------------------------------------
+
+
+.backBlack {
+    margin-top: 0px;
+    background-color: black;
+    width: 100%;
+}
+
+.foodDrinks {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+// PAGE MERCI CLODETTE ------------------------------------------------------------------------------
+
+
+.backGMerci {
+    background-image: url(../img/merci_bg.png);
+    background-size: cover;
+}
+
+.imageMerci {
+    padding-top: 20rem;
+}
+
+.merci_3 {
+    padding-top: 10rem;
+}
+
+.merci_text {
+    background-color: #F2C5B2;
+}
+
+
+
+// PAGE HAPPYCURE  ------------------------------------------------------------------------------
+
+.bgPink {
+    background-color: #FF9292;
+}
+
+.happy_savon {
+    position: relative;
+    top: -10rem;
+}
+
+.happy_baume {
+    position: relative;
+    left: 10rem;
+    bottom: -5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.happy_text {
+    width: 220%;
+}
+
+// PAGE MUSEUM  ------------------------------------------------------------------------------
+
+
+.logoWineDetails {
+    display: flex;
+    justify-content: center;
+}
+
+.logoDetails {
+    position: relative;
+    top: -10vh;
+}
+
+// PAGE TEST BOOT  ------------------------------------------------------------------------------
+
+
+.logoNav1 {
+    width: 129px;
+    height: 120px;
+}
+
+.menuSite {
+    font-family: $titleFont;
+    background-color: black;
+}
+
+.menuSite2 {
+    font-family: $titleFont;
+    background-color: white;
+
+}
+
+.menuPlus {
+    border: 2px solid #aecea7;
+    width: 75vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descript2 {
+
+    font-family: $mainFont;
+
+    h2:nth-child(1) {
+        color: black;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        margin-bottom: 2rem;
+    }
+
+    h2:nth-child(2) {
+        color: black;
+        text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
+    }
+
+    p {
+        color: white;
+        font-family: $titleFont;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        color: white;
+    }
+}
+
+.descript3 {
+    font-family: $titleFont;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    color: $yellow;
+    padding-top: 17%;
+
+    h1 {
+
+        padding-right: 10%;
+    }
+}
+
+//.flexBox {
+//    display: flex;
+//    flex-direction: row;
+//}
+
+
+
+// PAGE CONTACT  ------------------------------------------------------------------------------
+
+.contactMe {
+    text-align: center;
+    font-family: $titleFont;
+    color: black;
+    font-size: 10vh;
+    text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
+}
+
+.contactMe2 {
+    text-align: center;
+    font-family: $titleFont;
+    color: $yellow;
+    font-size: 10vh;
+}
+
+.animBen {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    img {
+        height: 30vh;
+    }
+}
+
+.adressStyle {
+    text-align: center;
+    font-family: $titleFont;
+    color: $yellow;
+    font-size: 3vh;
+}
+
+.greenFull {
+    border: 0px solid black;
+    color: $yellow;
+    text-shadow: 0px 0 white, 0 0px white, 0px 0 white, 0 0px white;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("../img/open-menu.png");
+}
+
+// PAGE CAROUSEL  ------------------------------------------------------------------------------
+
+/* Slider */
+.slick-slide {
+    background-color: black;
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+.margZero {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+// FOOTER 2 -------
+.footer2 {
+    display: none;
+}
+
+
+// --------- MEDIA QUERY ------------------------------------------------------------------------------
+
+@media screen and (min-width: 2559px) {
+    html {
+        font-size: 200%;
+    }
+
+    .footer1 {
+        height: 15vh;
+    }
+
+    .aPropos {
+        background-color: black;
+        height: 90vh;
+        text-transform: uppercase;
+        font-family: "Nexa-Bold";
+        padding: 3rem;
+    }
+
+    .descript3 {
+        font-family: $titleFont;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        color: $yellow;
+        padding-top: 14%;
+
+        h1 {
+
+            padding-right: 20%;
+        }
+    }
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1270px) {}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 767px) and (max-width: 1024px) {}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .vitrine1:hover .reeway {
+        display: none;
+    }
+
+    .vitrine2:hover .mamajo {
+        display: none;
+    }
+
+    .vitrine3:hover .papajo {
+        display: none;
+    }
+
+    .vitrine4:hover .clodette {
+        display: none;
+    }
+
+    .vitrine5:hover .ubhia {
+        display: none;
+    }
+
+    .vitrine6:hover .happy {
+        display: none;
+    }
+
+    .vitrine7:hover .museum {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 766px) {
+    .vitrine1:hover .reeway {
+        display: none;
+    }
+
+    .vitrine2:hover .mamajo {
+        display: none;
+    }
+
+    .vitrine3:hover .papajo {
+        display: none;
+    }
+
+    .vitrine4:hover .clodette {
+        display: none;
+    }
+
+    .vitrine5:hover .ubhia {
+        display: none;
+    }
+
+    .vitrine6:hover .happy {
+        display: none;
+    }
+
+    .vitrine7:hover .museum {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+
+@media (min-width: 310px) and (max-width: 480px) {
+    .menuSite {
+        padding: 0px;
+    }
+
+    .descript2 {}
+
+    .descript3 {
+        font-family: $titleFont;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 0%;
+        margin-top: 2rem;
+
+        h1 {
+
+            padding-right: 0%;
+        }
+    }
+
+    .vitrine1:hover .reeway {
+        display: none;
+    }
+
+    .vitrine2:hover .mamajo {
+        display: none;
+    }
+
+    .vitrine3:hover .papajo {
+        display: none;
+    }
+
+    .vitrine4:hover .clodette {
+        display: none;
+    }
+
+    .vitrine5:hover .ubhia {
+        display: none;
+    }
+
+    .vitrine6:hover .happy {
+        display: none;
+    }
+
+    .vitrine7:hover .museum {
+        display: none;
+    }
+
+    .aPropos {
+        height: 120vh;
+    }
+
+    .footer1 {
+        display: none;
+        height: 10vh;
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        font-family: $mainFont;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2rem;
+
+        span {
+            margin-right: 1rem;
+        }
+
+        .logoFoot2 {
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            width: 5rem;
+            height: 5rem;
+
+        }
+    }
+
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .noDisplay {
+        display: none;
+    }
+
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        background-color: black;
+        padding: 1rem 0rem;
+
+        .flexSocial {
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+
+            .fa-instagram {
+                font-size: 2rem;
+                margin-right: 2rem;
+            }
+
+            .fa-facebook-f {
+                font-size: 2rem;
+                margin-right: 2rem;
+            }
+
+            .fa-behance {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .logoDetails {
+        top: -5vh;
+    }
+
+    .imageMerci {
+        padding-top: 0rem;
+    }
+
+    .happy_savon {
+        position: relative;
+        top: -4rem;
+    }
+
+    .happy_baume {
+        position: relative;
+        left: 3rem;
+        bottom: -2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+}
